@@ -10,7 +10,7 @@ public class BankDealFactory {
 
     public static BankDeal buildChaseDeal(String dealLine){
         BankDeal deal = new BankDeal();
-        deal.setCusip(dealLine.substring(0,8));
+        deal.setCusip(dealLine.substring(0,9));
         return deal;
     }
 
