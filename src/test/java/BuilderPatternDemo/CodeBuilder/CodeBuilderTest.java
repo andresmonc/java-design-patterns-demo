@@ -15,13 +15,13 @@ class CodeBuilderTest {
     }
 
     @Test
-    void addField() {
+    void AddField_FieldAddedToString_True() {
         codeBuilder.addField("test", "boolean");
         assertTrue(codeBuilder.toString().contains("boolean test"));
     }
 
     @Test
-    void clear() {
+    void Clear_FieldsNotCleared_False() {
         codeBuilder.addField("test", "boolean")
                 .clear();
         assertFalse(codeBuilder.toString().contains("boolean test"));
